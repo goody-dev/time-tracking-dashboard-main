@@ -8,6 +8,15 @@ body {
   background-color: hsl(226deg, 43%, 10%);
 }
 
+.card-title {
+  font-size: 18px;
+}
+
+.time {
+  font-size: 25px;
+  font-weight: 300;
+}
+
 #person {
   grid-area: person;
 }
@@ -166,7 +175,7 @@ body {
 }
 
 .dashpiece {
-  height: 150px;
+  height: auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column-reverse;
@@ -177,6 +186,10 @@ body {
   background-color: hsl(235deg, 46%, 20%);
   height: 75%;
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  color: #FFFFFF;
+  width: 100%;
 }
 
 .period {
@@ -190,20 +203,26 @@ body {
   color: #FFFFFF;
 }
 
-.info {
-  display: flex;
-  flex-direction: row;
-  color: #FFFFFF;
-  width: 100%;
-}
-
 .info > .first-child {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;
+  background-color: aqua;
+  align-content: space-around;
 }
 
 .info > .second-child {
   width: 50%;
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 15px;
+  font-size: xx-small;
+  color: hsl(236deg, 100%, 87%);
 }
 
 @media screen and (min-width: 375px) and (max-width: 735px) {
@@ -226,7 +245,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    max-width: 375px;
+    width: 350px;
   }
   #person > #jer {
     display: flex;
@@ -328,7 +347,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 20px;
-    width: 375px;
+    width: 350px;
   }
   .info {
     margin-top: 10px;

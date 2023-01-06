@@ -14,6 +14,8 @@ document.getElementById('weekly').onclick = weekly();
 document.getElementById('monthly').onclick = monthly();
 
 //Functions that will display contents corresponding to period
-function daily() {}
+function daily() {
+    document.getElementById('work-text').innerHTML = "Worked";
+}
 function weekly() {}
 function monthly() {}
