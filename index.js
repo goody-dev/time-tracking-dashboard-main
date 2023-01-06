@@ -1,15 +1,19 @@
-async function getData(file) {
-    const outView = document.getElementById('text')
-    const myData = await fetch(file);
+//To fetch data from data.json
+async function getData() {
+    const myData = await fetch('http://127.0.0.1:3000/data.json');
     const info = await myData.json();
-    let title = JSON.stringify(info[1].title);
-    console.log(title);
-    outView.innerHTML = title;
-}
-getData('http://127.0.0.1:3000/time-tracking-dashboard-main/data.json');
+    //let title = JSON.stringify(info);
+    console.log(info);
+    return info;
+};
+getData();
 
-if(typeof(window) === 'object') {
-    console.log("Running in browser environment");
-} else {
-    console.log('Its running in a non-browser env.');
-}
+//To change content's period to either daily, weekly or monthly
+document.getElementById('daily').onclick = daily();
+document.getElementById('weekly').onclick = weekly();
+document.getElementById('monthly').onclick = monthly();
+
+//Functions that will display contents corresponding to period
+function daily() {}
+function weekly() {}
+function monthly() {}

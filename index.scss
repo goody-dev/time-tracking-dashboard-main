@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 // Layout
 $mobile: 375px;
 $desktop: 1440px;
@@ -22,8 +24,39 @@ $pale-blue: hsl(236, 100%, 87%);
 $card-title-font-size: 18px;
 
 //font
-$font-family: "Rubik";
+$font-family: 'Rubik', sans-serif;
 
+body {
+    font-family: $font-family;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    box-sizing: border-box;        
+    background-color: $very-dark-blue;
+}
+.period {
+    background-color: transparent;
+    border: none;
+    color: $desaturated-blue;
+    //font-family: $font-family;
+}
+.period:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    width: 100%;
+}
+.info > .first-child {
+    width: 50%;
+}
+.info > .second-child {
+    width: 50%;
+    text-align: right;
+}
 @media screen and (max-width: 375px) {
     body {
         padding: 0;
@@ -65,16 +98,19 @@ $font-family: "Rubik";
         width: 75%;
         text-align: left;
         //padding-left: 5%;
+        //font-family: $font-family;
     }
     #name >  p {
         color: #FFFFFF;
         font-size: clamp(2vw, 4vw, 12vw);
         margin-bottom: 0;
+        font-weight: 300;
     }
     #name >  h1 {
         color: #FFFFFF;
         font-size: clamp(2vw, 6vw, 12vw);
         margin-top: 0;
+        font-weight: 300;
     }
     #time-frame> ul {
         padding: 0;
@@ -86,9 +122,8 @@ $font-family: "Rubik";
     #time-frame> ul> li {
         list-style: none;
         margin: auto;
-        color: $desaturated-blue;
-        font-family: $font-family;
     }
+
     #work {
         background-color: $light-orange;
         background-image: url(./images/icon-work.svg);
