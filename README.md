@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://codeevolver.github.io/time-tracking-dashboard-main)
+- Solution URL: [GitHub Repository](https://github.com/CodeEvolver/time-tracking-dashboard-main)
 - Live Site URL: [GitHub Page](https://codeevolver.github.io/time-tracking-dashboard-main/)
 
 ## My process
