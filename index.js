@@ -271,7 +271,7 @@ const renderCards = (clickedOption) => {
 
         <div class="first-child">
 
-          <p id="work-text" class="card-title">${name}</p>
+          <p class="card-title">${name}</p>
 
           <img src="./images/icon-ellipsis.svg" alt="Three Dots">
 
